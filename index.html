@@ -2,59 +2,85 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
         <meta name="author" content="Joel Alejandro Espinoza Sánchez">
         <meta name="description" content="Material de aprendizaje y apuntes que he realizado">
         <meta name="keywords" content="Joel Alejandro Espinoza Sánchez, Portafolio, Apuntes">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mi Camino</title>
         <link href="styles.css" rel="stylesheet" type="text/css">
-        <script src="scripts.js"></script>
     </head>
     <body>
         <div class="portada">
-            <img src="images/01-portada.jpg" alt="Portada" class="portada-image">
+            <!--<img src="images/01-portada.jpg" alt="Portada" class="portada-image">-->
+            <div class="langchooser">
+                <label for="language-select" class="lang-sel-label">Idioma:</label>
+
+                <select name="language" id="language-select">
+                    <option value="es" class="lang-sel-opt-es">Español</option>
+                    <option value="en" class="lang-sel-opt-en">Inglés</option>
+                </select>
+            </div>
+
+            <div class="portada-grid-wrapper">
+                <div class="portada-imagen">
+                    <img src="images/01-introduction.jpeg" alt="Portada" class="portada-image">
+                </div>
+    
+                <div class="portada-nombre">
+                    <p class="lang-port-name">Joel Alejandro Espinoza Sánchez</p>
+
+                    <hr>
+                </div>
+    
+                <div class="portada-titulo">
+                    <p class="lang-port-title">Mi Camino</p>
+                </div>
+            </div>
         </div>
 
         <div class="introduccion">
-            <h1>Mi Camino</h1>
+            <h1 class="lang-intro-title">Mi Camino</h1>
 
-            <p>Este sitio web lo desarrollé para mostrar y opinar respecto al aprendizaje que obtuve y los productos que hice durante mi aprendizaje, desde los apuntes que logré rescatar desde mi educación temprana hasta aquellos productos de mi educación más reciente o autodidacta como lo presento dividido por etapas como se observa a continuación.</p>
+            <p class="lang-intro-p1">Desarrollé este sitio web para mostrar y opinar respecto al aprendizaje que obtuve y los productos que hice durante mi aprendizaje, desde los apuntes que logré rescatar desde mi educación temprana hasta aquellos productos de mi educación más reciente o autodidacta como lo presento dividido por etapas como se observa a continuación.</p>
 
-            <p>Además cuento mis experiencias de cómo fue estudiar en las distintas instituciones por las que pasé, contando tanto las buenas experiencias como las complicadas. Dejo mucho material de estudio que realicé a disposición pública con la esperanza de que a alguien le sirvan estos productos, ya sea como material de apoyo de estudio o como resolución de dudas.</p>
+            <p class="lang-intro-p2">Además cuento mis experiencias de cómo fue estudiar en las distintas instituciones por las que pasé, contando tanto las buenas experiencias como las complicadas. Dejo mucho material de estudio que realicé a disposición pública con la esperanza de que a alguien le sirvan estos productos, ya sea como material de apoyo de estudio o como resolución de dudas.</p>
+
+            <p class="lang-intro-p3"></p>
         </div>
 
         <div class="bachillerato">
-            <h2 onclick="toggle('toggleBachillerato')">Bachillerato</h2>
+            <h2 onclick="toggle('toggleBachillerato')" class="lang-bach">Bachillerato</h2>
             <div id="toggleBachillerato" style="display:none">
-                <p>Desde antes de entrar al bachillerato yo ya visualizaba esta etapa como la etapa en la que yo quería que mi vida tomara un giro muy drástico al tipo de vida que tenía en mi etapa previa, principalmente en la cuestión social.</p>
+                <p class="lang-bach-1">Desde antes de entrar al bachillerato yo ya visualizaba esta etapa como la etapa en la que yo quería que mi vida tomara un giro muy drástico al tipo de vida que tenía en mi etapa previa, principalmente en la cuestión social.</p>
 
-                <p>Mi intención nunca fue descuidar el (autoevaluado) gran trabajo académico que estaba realizando en mi etapa de educación básica, sin embargo nunca me di el tiempo de construir amistades y quería conseguir finalmente relaciones sociales sólidas y entré a esta etapa de tres años con este enfoque y con esta meta principalmente.</p>
+                <p class="lang-bach-2">Mi intención nunca fue descuidar el (autoevaluado) gran trabajo académico que estaba realizando en mi etapa de educación básica, sin embargo nunca me di el tiempo de construir amistades y quería conseguir finalmente relaciones sociales sólidas y entré a esta etapa de tres años con este enfoque y con esta meta principalmente.</p>
 
-                <p>Esto lo conseguí además de no descuidar tanto mis calificaciones (a excepción del primer año) y llevándome de esta etapa recuerdos con personas con quienes me alegra mantener los vínculos que tiempo atrás comencé.</p>
+                <p class="lang-bach-3">Esto lo conseguí además de no descuidar tanto mis calificaciones (a excepción del primer año) y llevándome de esta etapa recuerdos con personas con quienes me alegra mantener los vínculos que tiempo atrás comencé.</p>
 
-                <p>Estudié el bachillerato en el plantel central del Centro de Educación Media de la <a href="https://www.uaa.mx/portal/" target="_blank">Universidad Autónoma de Aguascalientes</a> desde julio del 2015 hasta junio del 2018 siendo, en general, una experiencia muy muy disfrutable desde el término social hasta términos académicos.</p>
+                <p class="lang-bach-4">Estudié el bachillerato en el plantel central del Centro de Educación Media de la <a href="https://www.uaa.mx/portal/" target="_blank">Universidad Autónoma de Aguascalientes</a> desde julio del 2015 hasta junio del 2018 siendo, en general, una experiencia muy muy disfrutable desde el término social hasta términos académicos.</p>
 
                 <!--<img src="images/02-bachuaa.jpg" alt="BachUAA" class="photoh2">-->
 
                 <div class="classh3">
-                    <h3 onclick="toggle('toggleBachillerato1')">Primer Semestre</h3>
+                    <h3 onclick="toggle('toggleBachillerato1')" class="lang-bach-s1">Primer Semestre</h3>
                     <div id="toggleBachillerato1" style="display:none">
-                        <blockquote>Todo lo que podemos hacer es dar lo mejor de nosotros y, a veces, lo mejor que podemos hacer es empezar de nuevo - Peggy Carter (Capitán América: Civil War)</blockquote>
+                        <blockquote class="lang-bach-s1-quote">Todo lo que podemos hacer es dar lo mejor de nosotros y, a veces, lo mejor que podemos hacer es empezar de nuevo - Peggy Carter (Capitán América y el Soldado del Invierno)</blockquote>
 
-                        <p>Este primer semestre fue un golpe de realidad a nivel educativo, sintiendo que en la secundaria no estaba tan preparado para la exigencia que había en ciertas materias. Yo iba muy animado a la materia de álgebra pues el Profesor Eduardo Guerrero Miranda nos dio un propedéutico de matemáticas que me hicieron despertar la curiosidad por las matemáticas, pero por otro lado, materias como Biología o Historia las sentía muy cargadas de contenido que yo pensaba que no daría el ancho ni en este semestre ni en la continuación de estas materias en el semestre siguiente.</p>
+                        <p class="lang-bach-s1-1">Este primer semestre fue un golpe de realidad a nivel educativo, sintiendo que en la secundaria no estaba tan preparado para la exigencia que había en ciertas materias. Yo iba muy animado a la materia de álgebra pues el Profesor Eduardo Guerrero Miranda nos dio un propedéutico de matemáticas que me hicieron despertar la curiosidad por las matemáticas, pero por otro lado, materias como Biología o Historia las sentía muy cargadas de contenido que yo pensaba que no daría el ancho ni en este semestre ni en la continuación de estas materias en el semestre siguiente.</p>
 
-                        <p>Sin embargo, aunque las cosas no salieron tan bien, académicamente no me fue tan mal, pasando el semestre satisfactoriamente en todas las materias.</p>
+                        <p class="lang-bach-s1-2">Sin embargo, aunque las cosas no salieron tan bien, académicamente no me fue tan mal, pasando el semestre satisfactoriamente en todas las materias.</p>
 
                         <div class="classh4">
-                            <h4 onclick="toggle('toggleB1A')">Álgebra</h4>
+                            <h4 onclick="toggle('toggleB1A')" class="lang-bach-s1-algb">Álgebra</h4>
                             <div id="toggleB1A" style="display:none">
-                                <p>El semestre lo empezábamos diariamente a las 7:00 de la mañana con la materia de álgebra. Impartido por el Profesor Eduardo Guerrero Miranda, el curso fue dinámico y a veces frenético, pero en mi opinión siempre fue interesante, donde aprendimos las bases del álgebra, con ecuaciones, fracciones, factorización y demás temas que, desde mi opinión, estuvieron muy bien enseñados por el docente.</p>
+                                <p class="lang-bach-s1-algb-1">El semestre lo empezábamos diariamente a las 7:00 de la mañana con la materia de álgebra. Impartido por el Profesor Eduardo Guerrero Miranda, el curso fue dinámico y a veces frenético, pero en mi opinión siempre fue interesante, donde aprendimos las bases del álgebra, con ecuaciones, fracciones, factorización y demás temas que, desde mi opinión, estuvieron muy bien enseñados por el docente.</p>
 
-                                <p>Con el profesor Eduardo me sentiré eternamente agradecido por impartirme este curso, pues con este curso entendí las matemáticas tras nueve años de llevarlas estudiando sin tenerles tanto gusto, pues no conocía su uso, comprensión y aplicación como lo hice hasta este curso. Fue gracias a él que les agarré interés y pasión, tanto que hasta el mismo profesor lo notó apuntándome para un concurso interno de matemáticas y que me motivó a participar en otras competiciones más grandes como las olimpiadas de matemáticas, a las que acabaría participando en el cuarto semestre de mi bachillerato (además del apoyo de otro amigo que conocí más adelante).</p>
+                                <p class="lang-bach-s1-algb-2">Con el profesor Eduardo me sentiré eternamente agradecido por impartirme este curso, pues con este curso entendí las matemáticas tras nueve años de llevarlas estudiando sin tenerles tanto gusto, pues no conocía su uso, comprensión y aplicación como lo hice hasta este curso. Fue gracias a él que les agarré interés y pasión, tanto que hasta el mismo profesor lo notó apuntándome para un concurso interno de matemáticas y que me motivó a participar en otras competiciones más grandes como las olimpiadas de matemáticas, a las que acabaría participando en el cuarto semestre de mi bachillerato (además del apoyo de otro amigo que conocí más adelante).</p>
 
-                                <p>Fue un curso con definiciones de algunos temas de álgebra pero más que nada la realización de ejercicios que nos permitieran comprender cada tema del curso.</p>
+                                <p class="lang-bach-s1-algb-3">Fue un curso con definiciones de algunos temas de álgebra pero más que nada la realización de ejercicios que nos permitieran comprender cada tema del curso.</p>
 
-                                <p>En este curso desarrollé mis apuntes que se pueden consultar <a href="01-Apuntes/02-Bachillerato/1/01-Algebra.pdf" target="_blank">aquí</a> pese a que creo que son apuntes sucios con mi letra a puño que siempre ha sido muy fea pero considero que fue un buen desarrollo de los temas de la materia de álgebra por lo que pueden ser útiles.</p>
+                                <p class="lang-bach-s1-algb-4">En este curso desarrollé mis apuntes que se pueden consultar <a href="01-Apuntes/02-Bachillerato/1/01-Algebra.pdf" target="_blank">aquí</a> pese a que creo que son apuntes sucios con mi letra a puño que siempre ha sido muy fea pero considero que fue un buen desarrollo de los temas de la materia de álgebra por lo que pueden ser útiles.</p>
                             </div>
                         </div>
 
@@ -1757,5 +1783,6 @@
                 </div>
             </div>
         </div>
+        <script src="scripts.js"></script>
     </body>
 </html>

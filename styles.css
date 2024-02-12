@@ -28,14 +28,158 @@ blockquote
 
 /* Portada del sitio */
 
+.langchooser
+{
+    margin: 20px 10vw;
+    text-align: end;
+}
+
+.langchooser label
+{
+    color: #00ff00;
+}
+
+.langchooser select
+{
+    background-color: #353a45;
+    color: #ffffff;
+}
+
+/*
 .portada
 {
     position: relative;
     width: 100vw;
     height: calc(100vw*9/16);
     overflow: hidden;
+    background-color: #1c1c1c;
+}
+*/
+
+.portada
+{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #1c1c1c;
 }
 
+
+@media only screen and (min-width: 768px)
+{
+    .portada-grid-wrapper
+    {
+        margin: 20px 10vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+        height: 80%;
+        align-items: center;
+    }
+
+    .portada-imagen
+    {
+        grid-column: 2 / 5;
+        grid-row: 1 / 5;
+        text-align: end;
+    }
+
+    .portada-imagen img
+    {
+        width: 40vw;
+        border-radius: 30px;
+    }
+
+    .portada-nombre
+    {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        text-align: center;
+    }
+    .portada-titulo
+    {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        text-align: center;
+    }
+
+    .portada-nombre p
+    {
+        color: #00ff00;
+        font-size: 20px;
+    }
+
+    .portada-nombre hr
+    {
+        color: #00ff00;
+    }
+
+    .portada-titulo p
+    {
+        color: #00ff00;
+        font-size: 34px;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 767px)
+{
+    .portada-grid-wrapper
+    {
+        margin: 20px 10vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        height: 100%;
+    }
+
+    .portada-imagen
+    {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        text-align: center;
+    }
+
+    .portada-imagen img
+    {
+        width: 240px;
+        border-radius: 30px;
+    }
+
+    .portada-nombre
+    {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        text-align: center;
+    }
+    .portada-titulo
+    {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        text-align: center;
+    }
+
+    .portada-nombre p
+    {
+        color: #00ff00;
+        font-size: 20px;
+    }
+
+    .portada-nombre hr
+    {
+        color: #00ff00;
+    }
+
+    .portada-titulo p
+    {
+        color: #00ff00;
+        font-size: 34px;
+        font-weight: bold;
+    }
+}
+
+/*
 .portada-image
 {
     position: absolute;
@@ -78,6 +222,7 @@ blockquote
     font-weight: bolder;
     text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
+*/
 
 /* Introducción al sitio */
 
