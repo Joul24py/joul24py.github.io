@@ -18,6 +18,8 @@ a
 h2, h3, h4
 {
     cursor: pointer;
+    padding: 30px 10px;
+    margin: 0;
 }
 
 blockquote
@@ -44,17 +46,6 @@ blockquote
     background-color: #353a45;
     color: #ffffff;
 }
-
-/*
-.portada
-{
-    position: relative;
-    width: 100vw;
-    height: calc(100vw*9/16);
-    overflow: hidden;
-    background-color: #1c1c1c;
-}
-*/
 
 .portada
 {
@@ -190,51 +181,6 @@ blockquote
     }
 }
 
-/*
-.portada-image
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-  
-.text-portada-1
-{
-    position: absolute;
-    top: 40%;
-    left: 15%;
-    transform: translate(-50%, -50%);
-}
-  
-.text-portada-1 p
-{
-    color: #36CB13;
-    font-size: 20px;
-    font-weight: bolder;
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-}
-
-.text-portada-2
-{
-    position: absolute;
-    top: 50%;
-    left: 15%;
-    transform: translate(-50%, -50%);
-}
-  
-.text-portada-2 p
-{
-    color: #36CB13;
-    font-size: 44px;
-    font-weight: bolder;
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-}
-*/
-
 /* Introducción al sitio */
 
 .introduccion
@@ -297,15 +243,27 @@ blockquote
     background: #C5E0B4;
 }
 
-.photoh2
+@media only screen and (min-width: 768px)
 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    height: 40vh;
-    width: calc(40vh*4/3);
-    border-radius: 10%;
+    .image-content
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 25vw;
+        border-radius: 30px;
+    }
+}
+@media only screen and (max-width: 767px)
+{
+    .image-content
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70vw;
+        border-radius: 30px;
+    }
 }
 
 /* Estilos a los semestres (h3) */
